@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulatorek</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+    </head>
+    <body>
+        <div class="kalkulator">
+            <input type="text" id="display" value="0"/> <br />
+            <button onclick="wyczysc()">
+            CE</button><button onclick="wyczyscAll()">
+            C</button><button onclick="wyczyscLast()">
+            &#8592</button><button onclick="silnia()">
+            x!</button> <br />
+            <button onclick="jedennax()">
+            &#8543ₓ</button><button onclick="dzialanie('doy')">
+            x&#696</button><button onclick="pierwiastekx()">
+            √x</button><button onclick="dzialanie('/')">
+            ÷</button> <br />
+            <button onclick="onButton(7)" class="numeryczne">
+            7</button><button onclick="onButton(8)" class="numeryczne">
+            8</button><button onclick="onButton(9)" class="numeryczne">
+            9</button><button onclick="dzialanie('*')">
+            *</button><br />
+            <button onclick="onButton(4)" class="numeryczne">
+            4</button><button onclick="onButton(5)" class="numeryczne">
+            5</button><button onclick="onButton(6)" class="numeryczne">
+            6</button><button onclick="dzialanie('-')">
+            -</button><br />
+            <button onclick="onButton(1)" class="numeryczne">
+            1</button><button onclick="onButton(2)" class="numeryczne">
+            2</button><button onclick="onButton(3)" class="numeryczne">
+            3</button><button onclick="dzialanie('+')">
+            +</button><br />
+            <button onclick="plusMinus()">
+            ±</button><button onclick="onButton(0)" class="numeryczne">
+            0</button><button onclick="poPrzecinku()">
+            ,</button><button onclick="rownaSie()">
+            =</button><br />
+        </div>
+    </body>
+</html>

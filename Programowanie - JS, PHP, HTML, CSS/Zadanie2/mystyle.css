@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    font-size: 18;
+}
+
+.banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+}
+
+.page{
+    display: flex;
+}
+
+.menu{
+    padding: 5px;
+    display: inline-block;
+    width: 40vw;
+}
+
+.content{
+    padding: 5px;
+    display: inline-block;
+    width: 60vw;
+}

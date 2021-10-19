@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial;
+    color: navy;
+}
+
+.all{
+    min-height: 720px;
+    display: block;
+}
+
+.page{
+    display: flex;
+    font-size: 20px;
+}
+
+.banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100vw;
+}
+
+.menu{
+    padding: 5;
+    display: inline-block;
+    background-color:rgb(77, 122, 247);
+    min-width: 25vw;
+}
+
+.content{
+    padding: 5;
+    display: inline-block;
+    background-color: rgb(105, 219, 247);
+    min-width: 50vw;
+}
+
+.jeden{
+    visibility: hidden;
+}
+.dwa{
+    visibility: hidden;
+}
+.trzy{
+    visibility: hidden;
+}
+.cztery{
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
+
+.news{
+    padding: 5;
+    display: inline-block;
+    background-color: rgb(105, 126, 221);
+    min-width: 25vw;
+    max-width: 25vw;
+}
+
+.lap{
+    display: block;
+    width: 10vw;
+}
+
+.lap:hover{
+    width: auto;
+    background-color: yellow;
+}
+
+.footer{
+    padding: 5;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100vw;
+    font-size: 12px; 
+    font-stretch: 5px;
+    text-align: center;
+}
+
+a:hover{
+    color: red;
+}

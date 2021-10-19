@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stacja Meteo</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div class="baner">
+            <h1>STACJA METEO</h1>
+        </div>
+
+        <div style="display: flex;">
+            <div class="lewy">
+                <h2>Dokumentacja wyników zapytań w bazie Meteo</h2>
+    
+                <table>
+                    <tr>
+                        <td><img src="kw1.jpg" alt="kwerenda1"></td>
+                        <td><img src="kw2.jpg" alt="kwerenda2"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="kw3.jpg" alt="kwerenda3"></td>
+                        <td><img src="kw4.jpg" alt="kwerenda4"></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="prawy">
+                <h2>Zmiana jednostek temperatury</h2> <br />
+                Temperatura w °C:<br />
+                <input type="text" id="stopnie"><br />
+                <br />
+                Zamaiana na: <br />
+                <button onclick="zamiana('K')">Kelwiny</button>
+                <button onclick="zamiana('F')">Farenheity</button> <br />
+                <br />
+                <p id="wynik"></p>
+                <h2>Do pobrania:</h2>
+                <ul>
+                    <a href="../baza/kwerendy.txt"><li>Kwerendy</li></a>
+                    <a href="../baza/meteo.sql"><li>Eksport MySQL</li></a>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="stopka">
+            <p>AGATA DOBRZYNIEWICZ 123456789</p>
+        </div>
+    </body>
+
+    <script>
+        function zamiana(jednostka){
+            var pole = document.getElementById("stopnie").value;
+            var wynik = document.getElementById("wynik");
+            pole = parseInt(pole);
+            if (pole == null || isNaN(pole)) {
+                alert("Błąd")
+            } else {
+                if(jednostka == 'K'){
+                    przeliczone = parseFloat(pole) + 273.15;
+                } else if (jednostka == 'F'){
+                    przeliczone = (parseFloat(pole)*1.8) + 32;
+                }
+                wynik.innerHTML = przeliczone+jednostka;
+            }
+            
+        }
+    </script>
+</html>

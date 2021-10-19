@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page</title>
+    </head>
+
+    <body>
+        
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .menu{
+                background-color: yellow;
+                width: 200px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+            }
+            .content{
+                background-color: beige;
+                position: absolute;
+                left: 200px;
+                right: 0;
+                top: 0;
+                bottom: 150px;
+                overflow: auto;
+            }
+            .terminal{
+                background-color: black;
+                height: 150px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                left: 200px;
+            }
+            @media screen and (max-width: 600px) {
+                .menu{
+                    display: none;
+                }
+                .content{
+                    left: 0;
+                }
+                .terminal{
+                    left: 0;
+                }
+            }
+
+            @media screen and (max-height: 500px){
+                .content{
+                    bottom: 0;
+                }
+                .terminal{
+                    display: none;
+                }
+            }
+
+            @media print {
+                .menu{
+                    display: none;
+                }
+                .content{
+                    position: relative;
+                    left: 0;
+                    bottom: 0;
+                }
+                .terminal{
+                    display: none;
+                }
+            }
+        </style>
+
+        <div class="menu">menu</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium eum modi aliquid minima quas ab officiis eos? At illo alias deserunt soluta odit asperiores veritatis temporibus ipsum optio commodi?</p>
+        </div>
+        <div class="terminal">terminal</div>
+    </body>
+</html>

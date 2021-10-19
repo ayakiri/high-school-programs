@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Proste dzialania</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <script>
+            function CheckIfNull(first, second) {
+                console.log(first, second)
+                if(first == null || second == null || isNaN(first) || isNaN(second)){
+                    alert("Prosze wypelnic obie liczby.");
+                }
+            };
+        
+            function plus(){
+                var first = parseInt(document.getElementById("first").value);
+                var second = parseInt(document.getElementById("second").value);
+                CheckIfNull(first, second);
+                var wynik = first + second;
+                document.getElementById("wynik").innerHTML = wynik; 
+            };
+        
+            function minus(){
+                var first = parseInt(document.getElementById("first").value);
+                var second = parseInt(document.getElementById("second").value);
+                CheckIfNull(first, second);
+                var wynik = first - second;
+                document.getElementById("wynik").innerHTML = wynik; 
+            };
+        
+            function razy(){
+                var first = parseInt(document.getElementById("first").value);
+                var second = parseInt(document.getElementById("second").value);
+                CheckIfNull(first, second);
+                var wynik = first * second;
+                document.getElementById("wynik").innerHTML = wynik; 
+            };
+        
+            function dziel(){
+                var first = parseInt(document.getElementById("first").value);
+                var second = parseInt(document.getElementById("second").value);
+                CheckIfNull(first, second);
+                if(second == 0){
+                    alert("Nie wolno dzielic przez zero.");
+                } else{
+                    var wynik = first / second;
+                    document.getElementById("wynik").innerHTML = wynik; 
+                }
+            };
+        
+        </script>
+
+        <a href="index.html"><img src="baner.jpg" class="baner"/></a>
+
+        <div class="page">
+            <div class="menu">
+                Menu: <br />
+
+                <a href="strona1.html">- proste dzialania</a> <br />
+
+                <a href="strona2.php">- potegowanie</a> <br />
+            </div>
+
+            <div class="content">
+                <h1>PROSTE DZIALANIA</h1>
+
+                <form>
+                    <i>Podaj pierwsza liczbe: </i> 
+                    <input type="number" id="first" step="any" />
+
+                    <br />
+
+                    <i>Podaj druga liczbe: </i> 
+                    <input type="number" id="second" step="any" /> 
+
+                    <br />
+                    
+                    <div class="buttons">
+                        <button type="button" onclick="plus()">DODAWANIE</button>
+    
+                        <button type="button" onclick="minus()">ODEJMOWANIE</button>
+    
+                        <button type="button" onclick="razy()">MNOZENIE</button>
+    
+                        <button type="button" onclick="dziel()">DZIELENIE</button>
+                    </div>
+                </form>
+
+                <p id="wynik"></p>
+            </div>
+        </div>
+    </body>
+</html>

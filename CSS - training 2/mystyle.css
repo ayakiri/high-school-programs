@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.page{
+    display: flexbox;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1150px;
+}
+
+.banner{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: burlywood;
+}
+
+.bannersegment{
+    border: 1px solid black;
+    display: inline-block;
+    width: 33.3%;
+    padding-top: 50px;
+}
+
+.bannersegment h1{
+    padding-left: 27.5%;
+}
+
+.kwadrat{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+.menu{
+    display: flex;
+    background-color: crimson;
+    width: 100%;
+    height: 40px;
+    margin-top: 30px !important;
+}
+
+.menu button {
+    height: 40px;
+}
+
+.tabelka{
+    display: flex;
+    margin-top: 30px !important;
+    background-color: darkcyan;
+    width: 920px;
+    height: 350px;
+    padding: auto;
+}
+
+.tabelka table {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.tabelka td {
+    height: 200px;
+    width: 245px;
+    background-color: coral;
+}
+
+.tabelka th {
+    background-color: crimson;
+}
+
+.zdj{
+    display: flex;
+    margin-top: 30px !important;
+    height: 300px;
+    width: 920px;
+    background-color: darkgoldenrod;
+}
+
+.zdj img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.listy{
+    display: flex;
+    margin-top: 30px !important;
+    margin-left: 30px;
+    width: 200px;
+    height: 600px;
+    float: right;
+    background-color: darkolivegreen;
+}
+
+.litery{
+    list-style: lower-alpha;
+    margin-left: 35px;
+}
+
+.kropki{
+    list-style: initial;
+    margin-left: 40px;
+}
+
+.listy ol{
+    margin-left: 30px;
+}
+
+footer{
+    display: flexbox;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1150px;
+}
+
+.stopka{
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px !important;
+}
+
+.footersegment {
+    display: inline-block;
+    width: 50%;
+    height: 200px;
+    background-color: lawngreen;
+    border: 1px solid black;
+}
+
+.kwadraciki{
+    display: block;
+    margin-top: 50px;
+    margin-left: 32%;
+    margin-right: 32%;
+}
+
+.linkacze{
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer .kwadrat{
+    display: inline-block;
+}

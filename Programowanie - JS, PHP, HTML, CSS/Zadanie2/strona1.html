@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Jaka to liczba</title>
+        <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    </head>
+
+    <body>
+        <a href="index.php"><img src="banner.png" class="banner" /></a>
+        <div class="page">
+            <div class="menu">
+                MENU: <br />
+                <a href="index.php">Opis</a><br />
+                <a href="strona1.html">Jaka to liczba?</a><br />
+                <a href="strona2.html">Liczby calkowite z zakresu</a>
+            </div>
+
+            <div class="content">
+                <script>
+                    var haslo = prompt("Wpisz haslo aby wejsc na podstrone", '');
+
+                    if (haslo === 'liczba'){
+                        var a = parseInt(prompt("Podaj liczbe calkowita"));
+    
+                        if(a > 0){
+                            document.write('Liczba ' + a + ' jest dodatnia')
+                        } else if (a < 0 ){
+                            document.write('Liczba ' + a + ' jest ujemna')
+                        } else if(a == 0){
+                            document.write('Liczba ' + a + ' jest zerem')
+                        } else {
+                            document.write('Liczba ' + a + ' jest nieprawidlowa')
+                        }
+                    } else {
+                        alert("Bledne haslo")
+                    }
+                    
+                </script>
+            </div>
+        </div>
+
+        <?php
+
+
+        ?>
+    </body>
+</html>

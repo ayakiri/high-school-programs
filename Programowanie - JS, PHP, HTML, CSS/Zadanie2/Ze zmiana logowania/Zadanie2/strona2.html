@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Przedzial</title>
+        <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    </head>
+
+    <body>
+        <a href="index.php"><img src="banner.png" class="banner" /></a>
+        <div class="page">
+            <div class="menu">
+                MENU: <br />
+                <a href="index.php">Opis</a><br />
+                <a href="strona1.php">Jaka to liczba?</a><br />
+                <a href="strona2.html">Liczby calkowite z zakresu</a>
+            </div>
+
+            <div class="content">
+                <script>
+                    var a = prompt("Podaj liczbe poczatkowa");
+                    var b = prompt("Podaj liczbe koncowa");
+
+                    if(a == b){
+                        document.write("Przedzial: " + a);
+                    } else if ( a > b){
+                        document.write("Przedzial: ");
+                        for(var i = a; i >= b; i--){
+                            document.write(a + ", ");
+                            a--
+                        }
+                    } else if ( a < b){
+                        document.write("Przedzial: ");
+                        for(var i = a; i <= b; i++){
+                            document.write(a + ", ");
+                            a++
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

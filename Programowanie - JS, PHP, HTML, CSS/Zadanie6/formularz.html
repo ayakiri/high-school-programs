@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularz</title>
+    </head>
+    <body>
+        <form>
+            Imie: 
+            <input type="text" id="imie" required> <br />
+            Nazwisko
+            <input type="text" id="nazwisko" required> <br />
+            Wiek: 
+            <input type="number" id="wiek" required> <br />
+
+            <script>
+                function checkAge() {
+                    wiek = document.getElementById("wiek").value
+                    
+                    console.log(wiek)
+
+                    if (wiek < 18){
+                        alert("Jesteś za młody aby wysłać formularz")
+                    } else {
+                        window.open('mailto: adam@wp.pl');
+                    }
+                }
+            </script>
+
+            <input type="submit" onclick="checkAge()" value="Wyslij">
+        </form>
+    </body>
+</html>

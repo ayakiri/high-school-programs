@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT COUNT(*) FROM `sportowiec`;
+Zapytanie 2: SELECT imie, nazwisko FROM `sportowiec` WHERE id=1;
+Zapytanie 3: SELECT AVG(wyniki.wynik) FROM wyniki JOIN sportowiec ON wyniki.sportowiec_id = sportowiec.id WHERE sportowiec.id = 1 AND wyniki.dyscyplina_id = 3;
+Zapytanie 4: SELECT wyniki.wynik FROM `wyniki` WHERE wyniki.dyscyplina_id = 3 ORDER BY wyniki.wynik DESC LIMIT 1;
