@@ -1,0 +1,231 @@
+@font-face {
+    font-family: StardewFont;
+    src: url(SDV-Fonts/Stardew_Valley.ttf);
+  }
+
+  * {
+      font-family: StardewFont;
+      font-size: 30px;
+      color: rgb(187, 83, 64);
+  }
+
+  body {
+      background-image: url('background.png');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      position: relative;
+  }
+
+  /* index: logo + przyciski */
+
+  .index .content{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 1100px;
+  }
+
+  .index .logo{
+      width: 100%;
+      margin-top: 30px;
+  }
+
+  .index .logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .index .przyciski {
+    width: 1100px;
+  }
+
+  .index .przyciski button {
+      font-size: 40px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      background-image: url("button.png");
+      width: 300px;
+      height: 116px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+  }
+
+  .index a {
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .index a:hover button {
+    font-size: 50px;
+  }
+
+    /* rejestracja/logowanie: logo + inputy + info o rejestracji/logowaniu */
+
+    .logowanie {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 1100px;
+    }
+
+    .logowanie .content{
+      display: flex;
+    }
+
+    .logowanie .logo{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .logowanie .logo img{
+      position: relative;
+      left: 0px;
+      width: 450px;
+    }
+
+    .logowanie .login{
+      display: inline-block;
+      width: 550px;
+    }
+
+    .logowanie .loginform input {
+      display: inline-block;
+      font-size: 40px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      background-image: url("input.png");
+      width: 430px;
+      height: 116px;
+      padding-left: 20px;
+    }
+
+    .logowanie .loginform label {
+      color: rgb(22, 21, 21);
+     font-size: 50px; 
+    }
+
+    .logowanie .loginform .adds{
+      width: 450px;
+      padding-left: 0px !important;
+    }
+
+    .logowanie .info {
+      display: inline-block;
+      width: 550px;
+    }
+
+    .logowanie .pierre {
+      position: sticky;
+      top: 107px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: url("info.png");
+      height: 600px;
+      width: 445px;
+      margin-top: 100px;
+    }
+
+    .logowanie .pierre img {
+      height: 215px;
+      width: 215px;
+      margin-left: 115px;
+      margin-top: 50px;
+    }
+
+
+    .logowanie .pierre p {
+      font-size: 50px;
+      width: 300px;
+      margin-left: 75px;
+      margin-top: 50px;
+    }
+
+    .logowanie .pierre a {
+      display: block;
+      font-size: 50px;
+      margin-left: 85px;
+      text-decoration: none;
+    }
+
+    .logowanie .pierre a:hover {
+      cursor: pointer;
+      font-size: 60px;
+      margin-left: 75px;
+    }
+
+    /* Shop */
+
+    .shop {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 1100px;
+    }
+
+    .shop .content{
+      display: flex;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 1100px;
+    }
+
+    .shop .logo{
+      width: 100%;
+      margin-top: 30px;
+  }
+
+    .shop .logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .shop .hello{
+      display: inline-block;
+      width: 550px;
+    }
+
+    .shop .stuff {
+      display: flex;
+      width: 1100px;
+    }
+
+    .shop table {
+      margin-left: 250px;
+    }
+
+    .shop .stuff td{
+        background-image: url("product-preview-extended.png");
+        height: 314px;
+        width: 569px;
+    }
+
+    .shop .stuff img {
+      float: right;
+      margin-right: 50px;
+    }
+
+    .shop td div {
+      padding-left: 50px;
+    }
+
+    .shop .stuff .submit {
+      font-size: 40px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      background-image: url("button.png");
+      width: 300px;
+      height: 116px;
+      display: block;
+      margin-left: 390px;;
+      margin-top: 15px;
+  }

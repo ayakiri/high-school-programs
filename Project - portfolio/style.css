@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+body{
+    background-color: rgb(46, 46, 46);
+}
+
+.page{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+}
+
+
+/* Banner */
+
+.banner {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.banner div {
+    display: inline-block;
+    width: 50%;
+}
+
+.banner h1 {
+    font-size: 50px;
+    text-shadow: 6px 6px 5px #000000;
+}
+
+.banner h1:hover {
+    font-size: 50px;
+    text-shadow: 6px 6px 5px #000000;
+}
+
+/* Zawartość */
+
+.content{
+    position: absolute;
+    top: 100px;
+    display: inline-block;
+    width: 450px;
+}
+
+
+/* Zawartość góra */
+
+.subpage {
+    display: inline-block;
+    height: 150px;
+    width: 180px;
+    margin: 15px 20px 15px 20px;
+    text-align: center;
+    box-shadow: 6px 6px 14px 0px rgba(0,0,0,1);
+}
+
+.subpage img{
+    width: 80px;
+    margin: 20px 0px 10px 10px;
+}
+
+.description {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 290px;
+    background-color: #7b7bcc;
+    padding: 20px;
+    overflow: auto;
+    box-shadow: 6px 6px 14px 0px rgba(0,0,0,1);
+}
+
+/* Zawartość dół */
+
+.quote{
+    margin: 15px 20px 15px 20px;
+    width: 365px;
+    height: 95px;
+    padding: 20px;
+    padding-top: 35px;
+    background-color: #7b7bcc;
+    text-align: center;
+    box-shadow: 6px 6px 14px 0px rgba(0,0,0,1);
+}
+
+.link{
+    display: inline-block;
+    margin: 15px 15px 15px 0px;;
+    width: 101.25px;
+    height: 150px;
+    box-shadow: 6px 6px 14px 0px rgba(0,0,0,1);
+}
+
+.link img {
+    width: 81.25px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+/* Stylizacja do hover */
+
+.pic1{
+    background-color: #BDBDFD;
+}
+
+.pic1:hover{
+    background-color: #8383b6;
+    box-shadow: inset 6px 6px 14px 0px rgba(0,0,0,1);
+}
+
+.pic2{
+    background-color: #BC75F9;
+}
+
+.pic2:hover{
+    background-color: #8553b1;
+    box-shadow: inset 6px 6px 14px 0px rgba(0,0,0,1);
+}
+
+.pic3{
+    background-color: #535EEB;
+}
+
+.pic3:hover{
+    background-color: #373d9c;
+    box-shadow: inset 6px 6px 14px 0px rgba(0,0,0,1);
+}
+
+.pic4{
+    background-color: #00218A;
+}
+
+.pic4:hover{
+    background-color: #001149;
+    box-shadow: inset 6px 6px 14px 0px rgba(0,0,0,1);
+}
+
+/* Stopka */
+
+footer .page {
+    text-align: center;
+    position: relative;
+    top: 550px;
+}

@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.game{
+    width: 300px;
+    color: rgb(90, 84, 84);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#plansza td {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    background-color:#e3eaa7;
+    cursor: pointer;
+}
+
+#plansza td:hover{
+    transition: background-color 0.2s;
+    background-color: #c0c58e;
+    transition: font-size 0.1s;
+    font-size: 20px;
+}
+
+#plansza button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color:#86af49;
+    border: none;
+    cursor: pointer;
+}
+
+#plansza button:hover {
+    transition: background-color 0.2s;
+    background-color: #6a8a3b;
+}
+
+.p0{
+    color: transparent;
+}
+
+.p1{
+    color: rgb(0, 140, 255);
+}
+
+.p2{
+    color: rgb(255, 136, 0);
+}
+
+.p3{
+    color: rgb(255, 60, 0);
+}
+
+.p4{
+    color: rgb(211, 9, 9);
+}
+
+.p5{
+    color: rgb(189, 13, 233);
+}
+
+.p6{
+    color: rgb(74, 28, 182);
+}
+
+.p7{
+    color: rgb(182, 26, 39);
+}
+
+.p8{
+    color: rgb(230, 18, 177);
+}
+
+.p-1{
+    color: transparent;
+    background-image: url(daisies.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+
+.flagged{
+    background-image: url(crocus.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}

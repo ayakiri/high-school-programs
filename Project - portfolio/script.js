@@ -1,0 +1,25 @@
+var komponent = document.getElementById("czas");
+
+var data = () => {var d = new Date(); 
+    komponent.innerHTML = d.getHours() + ":" 
+    + d.getMinutes() + ":" 
+    + d.getSeconds(); 
+    console.log("data")}
+
+data()
+setInterval(data, 1000);
+
+function kimJestem(){
+    opis = document.getElementById("description");
+    opis.innerHTML = "<h3>Kim jestem?</h3><br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error.";
+}
+
+function coOferuje(){
+    opis = document.getElementById("description");
+    opis.innerHTML =  "<h3>Co oferuje?</h3><br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error.";
+}
+
+function kontakt(){
+    opis = document.getElementById("description");
+    opis.innerHTML = "<h3>Kontakt</h3><br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus sint beatae, esse aliquam eligendi aut quo praesentium commodi sed dolor accusamus velit quos alias aspernatur obcaecati quibusdam? Obcaecati, error.";
+}

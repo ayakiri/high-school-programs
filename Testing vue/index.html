@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <title>Vue</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <ul>
+                <li v-for="(item, index) in list">
+                    <input type="checkbox" :checked="item.done" @input="item.done = !item.done">
+                    <input type="checkbox" v-model="item.done">
+                    <span>{{ item.title }}</span>
+                    <span title="usun" style="color: red;" @click="removeItem(index)">x</span>
+                </li>
+            </ul>
+            <input type="text" v-model="newTitle">
+            <button @click="addItem()">Dodaj</button>
+            <div>{{ newTitle }} </div>
+
+            <pre>
+                {{ list }}
+            </pre>
+        </div>
+
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    list: [
+                        {title: "Mleko", done: false},
+                        {title: "Chleb", done: true},
+                        {title: "Masło", done: true}
+                    ],
+                    newTitle: "",
+                },
+                methods: {
+                    addItem() {
+                        var newItem = {
+                            title: this.newTitle,
+                            done: false,
+                        }
+                        this.list.push(newItem);
+                        this.newTitle = "";
+                    },
+                    removeItem(index){
+                        this.list.splice(index, 1);
+                    }
+                }
+            });
+
+            document.cookie = "username=Aya";
+        </script>
+    </body>
+</html>
